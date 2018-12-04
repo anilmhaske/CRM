@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/WebTool_Retailware_03082017/global.asax" hash="72eca345" filehash="1d7ba18274be" flags="150000" assembly="App_global.asax" type="ASP.global_asax">
+    <filedeps>
+        <filedep name="/WebTool_Retailware_03082017/global.asax" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,461 @@
+/***** loader *****/
+.topbar
+{
+background-color: rgb(99, 117, 26);}
+#panel
+{
+padding-left:0px;
+padding-right:0px;
+padding-top:10px;
+padding-bottom:0px;}
+#loader,#loader1,#userlistloader,#usereditloader,#loaderRole {
+    /*z-index: 10001;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    position:absolute;
+	top:0;
+    width:100%;
+	height:660px;
+    display:none;
+}
+
+.list-group-item
+{
+border:0px;
+padding:4px 0px;
+}
+/********/
+/**** uploaddoc btn****/
+.uploaddoc{
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #b8a4e8 , #6f6879);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+/********/
+/*****panel heading****/
+
+#heading
+{
+	padding:5px;
+	background: linear-gradient(to bottom, #f8f1bd, #f8f1bd);
+	  height:45px;
+}
+#headingroleassign{
+    padding:5px;
+    background:linear-gradient(to bottom, #85D058 , #85D058);
+      height:35px;
+}
+#addproject
+{
+	padding: 4px 7px;
+	background-color:white;
+}
+#showoprojectption
+{
+	padding-left: 46%;
+}
+#addformpanel	
+{
+	  margin-top: 0px; 
+	  border:none;
+}
+.well
+{
+	padding:0px;
+	border:solid #3f7f18 1px;
+	border-top-style:none;
+	border-left-style:none;
+	border-right-style:none;
+}	
+	
+
+	.currancy
+{
+	padding: 0px 0px;
+}
+#formrow
+{
+ margin-bottom:15px;
+
+}
+
+
+#btnrow
+{
+	padding-left:0%;
+}
+.table {
+    
+    margin-bottom: 0px; 
+}
+thead
+{
+	background: #D0FFb4;
+	color:#61702B;
+}
+.modal-header
+{
+	background-color: #e8e09f;
+}
+.modal-body{
+	background-color: #fffbde;
+}
+.modal-title
+{
+	text-align:center;
+}
+/*********/
+#searchbtn
+{
+	width:60px;
+	background:linear-gradient(to bottom, #fdd428 , #FFd258);
+}
+.pre-header {
+    color: #616b76;
+    border-bottom: 1px solid #eee;
+    padding-top: 5px;
+    line-height: 1.2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background: #fff;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+.navbar {
+    margin-bottom: 0px;
+}	
+ul {
+	margin-top: 0;
+    margin-bottom: 3px;
+}
+#changeopacity{
+   z-index :1200;
+   margin:2px -70px 0;
+}
+#dropdown{
+	color:#f1f6ff;
+	font-size:12px;
+	font-weight:bold;
+}
+#changecolor{
+	color:#f1f6ff;
+	font-weight:bold;
+	font-size:12px;
+}
+#colordrp{
+	color:#f1f6ff;
+	font-weight:bold;
+	font-size:12px;
+}
+#wrapper{
+  width: 101%;
+}
+
+/***  UserBlock  ***/
+#section1{
+	margin-top:2%;
+}
+.userlinks{
+	color:#f1f6ff;
+	font-weight:bold;
+}
+#minimizerow{
+  margin-bottom:0px;  
+}
+hr{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.row{
+    margin-bottom:0px;  
+}
+.panel-heading{
+    padding:4px 15px;
+}
+.button-sm{
+    padding:2px 10px;
+    font-weight:bold;
+}
+.mypanelbody{
+    padding:0px;
+}
+.myform-control{
+   height:24px; 
+}
+#addcatbtn{
+    padding:5px 10px;
+    font-size:12px;
+}
+
+.form-control{
+    height:32px;
+}
+.drpdown{
+    padding:0px 12px;
+}
+#ok {
+    background: linear-gradient(to bottom, limegreen , limegreen);
+    color: white;
+    font-weight: bold;
+    padding:3px 5px 3px 5px;
+        border: 1px solid rgb(121, 189, 60);
+        border-radius: 3px;
+}
+#no{
+    background: linear-gradient(to bottom, #ff0000 ,#ff0000);
+    color: white;
+    font-weight: bold;
+    padding:3px 5px 3px 5px;
+    border: 1px solid rgb(217, 83, 79);
+    border-radius: 3px;
+}
+/******* add ,submit ,cancel ,reset button ********/
+#addsubmitbtn,#rolebtn
+{
+	padding:5px;
+	width:70px;
+	border: solid 1px white;
+    border-radius: 4px;
+
+   background: linear-gradient(to bottom, #6ec20a , #6ec20a);
+   // background: linear-gradient(to bottom, #130def , #0c17f5);
+	
+   color: white;
+    font-weight: bold;
+    text-align: center;
+	
+}
+#submitbtn
+{
+	padding:5px;
+	width:70px;
+	border: solid 1px white;
+    
+	//background:linear-gradient(to bottom, #2ff212 , #053f0c);
+	 background: linear-gradient(to bottom, #6ec20a , #6ec20a);
+   color: white;
+    font-weight: bold;
+    text-align: center;
+	
+
+}
+
+#cancel
+{
+padding:5px;
+	width:70px;
+	border: solid 1px white;
+    
+   //background: linear-gradient(to bottom, #ff0000 ,#ff0000);
+    background: linear-gradient(to bottom, #f5831d ,#f5831d);
+   color: white;
+    font-weight: bold;
+    text-align: center;
+	
+}
+#reset{
+	padding:5px;
+	width:70px;
+	border: solid 1px white;
+    border-radius: 4px;
+   background: linear-gradient(to bottom, #f5831d ,#f5831d);
+   //background: linear-gradient(to bottom, #ff0000 ,#ff0000);
+   color: white;
+    font-weight: bold;
+    text-align: center;
+	 
+}
+/*********/
+/******** on off swich *********/
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "YES";
+    padding-left: 10px;
+    background-color:  #069d06; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "NO";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    border: 2px solid #999999; border-radius: 20px;
+    position: absolute; top: 0; bottom: 0; right: 56px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}/************/
+/** tabel border color **/
+	.table-bordered>thead>tr>td,
+	.table-bordered>thead>tr>th,
+	table>thead:first-child>tr:first-child>th,
+	.table-bordered>tbody>tr>td,.table > thead 
+	{
+	border:solid rgb(222, 152, 143) 1px;
+
+	}
+	.table>tbody>tr>td, .table>tbody>tr>th{
+    padding-top: 2px;
+	 padding-bottom: 2px;
+	}
+	/******/
+.btn-group-xs>.btn, .btn-xs{
+    padding:0px 0px;
+}
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th, table>thead:first-child>tr:first-child>th, .table-bordered>tbody>tr>td, .table > thead
+{
+  
+	border: solid rgb(222, 152, 143)  1px;
+
+    
+}
+.userpanel{
+    margin-bottom:1px;
+    background-color: #33b78c;
+}
+  .pagination > li > a{
+color:#940f22;
+background-color:rgb(220, 113, 99);
+border:1px solid  rgb(250, 113, 99);
+font-weight:bold;
+
+}
+ .pagination > li > span{
+color:#33b78c;
+background-color:#ddd;
+border:1px solid rgb(220, 113, 99);
+font-weight:bold;
+
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    border-color:rgb(220, 113, 99);
+    background-color:#ccc;
+	
+}
+.table>tbody>tr>td, .table>tbody>tr>th {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+@media (min-width: 300px)
+{
+    .btnschadd{ margin-top:-57px;}
+	#addschoolbtn{margin-top: 0px;}
+	#showschption{margin-left: -40px;}
+	.clspagination{margin-left: -4px;}
+	#showshosption{margin-left: -46px;}
+	#showsourception{margin-left: -46px;}
+	#showroleschption{margin-left: -42px;}
+}
+@media (min-width: 600px)
+{
+   
+}
+@media (min-width: 900px)
+{
+   .btnschadd{ margin-top:-2px;}
+   .searchbox{width:250px !important;height: 35px;}
+   .setmargin{margin-top: 10px;}
+}
+.ngview{
+	padding-right:5px;
+	padding-left:5px;
+}
+.tdcss{
+    text-align: center;
+}
+#setpan {
+    margin-right: -12px;
+    margin-left: -21px;
+	border: solid 1px #3f7f18;
+}
+.panelset {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: solid 1px #3f7f18;
+}
+/* angular css */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}
+
+.ng-animate-shim {
+  visibility:hidden;
+}
+
+.ng-anchor {
+  position:absolute;
+}
+
+/* end of angular css */
+
+input.ng-invalid {
+    border: 1px solid red !important;
+    background: url(../images/false1.jpg) no-repeat scroll 7px 7px;
+    background-position : right;
+    background-size : 10px;
+
+ }
+ input.ng-valid {
+    border: 1px solid green !important;
+    background: url(../images/true.png) no-repeat scroll 7px 7px;
+    background-position : right;
+    background-size : 20px;
+ }
+ input.ng-empty 
+ {
+    background:none !important;
+    border: 1px solid #ccc !important; 
+ }

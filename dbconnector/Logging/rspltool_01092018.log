@@ -1,0 +1,12 @@
+Hello! Welcome From Team Retailware [01-Sep-2018]
+----------------------------------------------------------------------------
+[05:39:53]->MakeConnection = Cannot open database "Rpro_37600" requested by the login. The login failed.
+Login failed for user 'guddus'.
+[05:39:53]->GetWebSetting = Object reference not set to an instance of an object.
+[05:41:33]->MakeConnection = Cannot open database "Rpro_37600" requested by the login. The login failed.
+Login failed for user 'guddus'.
+[05:41:33]->MakeConnection = Cannot open database "Rpro_37600" requested by the login. The login failed.
+Login failed for user 'guddus'.
+[05:41:33]->MakeConnection = Cannot open database "Rpro_37600" requested by the login. The login failed.
+Login failed for user 'guddus'.
+[05:45:54]->GetWebSetting = Object reference not set to an instance of an object.

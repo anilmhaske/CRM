@@ -1,0 +1,63 @@
+﻿<%@ master language="VB" inherits="M_Home, App_Web_home.master.4fd81c8b" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Welcome</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table align="center" width="90%">
+            <tr>
+                <td align="center">
+                    <asp:Menu ID="mnuHO" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/M/CustInfo.aspx" Text="Cust" 
+                                Value="webreportm_cust" Enabled="False"></asp:MenuItem>
+                            <asp:MenuItem Text="|"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/M/ProductMatrix.aspx" Text="Product" 
+                                Value="webreportm_product" Enabled="False"></asp:MenuItem>
+                            <asp:MenuItem Text="|"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/M/BranchScore.aspx" Text="Score" 
+                                Value="webreportm_score" Enabled="False"></asp:MenuItem>
+                            <asp:MenuItem Text="|"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/M/FT.aspx" Text="FT" 
+                                Value="webreportm_ft" Enabled="False"> </asp:MenuItem>
+                            <asp:MenuItem Text="|"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/M/ProductViewer.aspx" Text="PV" 
+                                Value="webreportm_pv" Enabled="False"> </asp:MenuItem>
+                            <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/M/Logout.aspx" Text="LogOut" 
+                                Value="webreportm_logout" Enabled="True"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td align="center"  >
+                    <hr />
+                </td>
+            </tr>
+        </table>
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+        <table align="center" width="90%">
+            <tr>
+                <td align="center"  >
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    ©2012 Retailware Softech Pvt Ltd.<br />
+                    All rights reserved.
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

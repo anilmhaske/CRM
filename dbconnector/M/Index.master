@@ -1,0 +1,51 @@
+﻿<%@ master language="VB" inherits="M_Index, App_Web_index.master.4fd81c8b" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table align="center" width="90%">
+            <tr>
+                 <td align="center" >
+                    <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/mobilelogo.jpg"  />
+                </td>
+            </tr>
+            <tr>
+                <td align="center"  >
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="color:Green;" >
+                    <b><asp:Label ID="lblFirmName" runat="server" Text="Firm Name"></asp:Label></b>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+        <table align="center" width="90%">
+            <tr>
+                <td align="center"  >
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+            
+                <td align="center">
+                    ©2011 Retailware Softech Pvt Ltd.<br />
+                    All rights reserved.
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

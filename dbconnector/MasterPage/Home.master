@@ -1,0 +1,99 @@
+﻿<%@ master language="VB" inherits="Home, App_Web_home.master.ec608581" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server" style="font-family:Verdana; font-size:12px;"  >
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server" AsyncPostBackTimeout="36000"></telerik:RadScriptManager>
+        <table width="100%" align="center"   cellspacing="0" cellpadding="0">
+        <tr>
+            <td  align="left"  style="height: 20px ;width:20%" >
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/logo_retailware.jpg" /><br />
+            </td> 
+            <td align="center"  style="height: 20px ;width:80%;margin-top:2px; font-family " >
+                <asp:Label ID="lblFirmName" runat="server" Text="Firm Name" Font-Size="30px" Font-Italic="True" Font-Bold="True" ForeColor="Blue"  Font-Names="Cambria"   ></asp:Label> <br />
+                <asp:Label ID="lblSlogan" runat="server" Text="Bussiness Slogan" Font-Size="12px"  Font-Bold="True" ForeColor="Blue"></asp:Label>
+            </td> 
+        </tr>
+        </table>
+        <hr />
+        <table width="100%" align="center"  cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="60%"  height="5px" align="left"  style="font-size:18px;">
+                <telerik:RadMenu ID="mnuHO" Runat="server" Skin="Web20" style="top:0px;left:0px;" >  
+                    <Items>
+                        <telerik:RadMenuItem runat="server"  Visible="false"  Enabled="false" Value="webreport_home" Text="Home" >
+                            <Items>
+                                <telerik:RadMenuItem runat="server"  Visible="false" Enabled="false" Value="WebReport-Dashboard" Text="Dashboard" NavigateUrl="~/DashBoard/DashBoard.aspx"></telerik:RadMenuItem>
+                            </Items> 
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server"  Visible="false" Enabled="false" Value="webreport_central_masters" Text="Central Masters">
+                            <Items>
+                                <telerik:RadMenuItem runat="server"   Visible="false" Enabled="false" Value="webreport_salesman_master" Text="SalesMan Master" NavigateUrl="~/Masters/Salesman.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false" Enabled="false"  Value="webreport_supplier_master" Text="Supplier Master" NavigateUrl="~/Masters/Supplier.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server"   Visible="false" Enabled="false" Value="webreport_customer_master" Text="Customer Master" NavigateUrl="~/Masters/CustomerMaster.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem  runat="server" Visible="false" Enabled="false" Value="webreport_attribute_master" Text="Attribute Master" NavigateUrl="~/Masters/AttributeMaster.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false" Enabled="false"  Value="webreport_web_settings" Text="Web Settings" NavigateUrl="~/Masters/WebSetting.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false" Enabled="false"  Value="webreport_web_endpoint" Text="Web EndPoint" NavigateUrl="~/Masters/EndPoint.aspx"></telerik:RadMenuItem>                                
+                            </Items>
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server"  Visible="false" Enabled="true" Value="webreport_central_reports" Text="Central Reports">
+                            <Items>
+                                <telerik:RadMenuItem runat="server" Visible="false" Enabled="false" Value="webreport_loyaltypoint" Text="Loyalty Point" NavigateUrl="~/Reports/CustLoyaltyLedger.aspx"> </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false" Enabled="false" Value="webreport_productqsearch" Text="Product QSearch" NavigateUrl="~/Reports/ProductQSearch.aspx"> </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false" Enabled="false" Value="webreport_productmannualsearch" Text="Product Mannual Search" NavigateUrl="~/Reports/ProductSearch_Manual.aspx"> </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false" Enabled="false" Value="webreport_branchscore" Text="Branch Score" NavigateUrl="~/Reports/BranchScore.aspx"> </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false" Enabled="false" Value="webreport_transsummary" Text="Transaction Summary" NavigateUrl="~/Reports/TransSummary.aspx"> </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false" Enabled="false" Value="webreport_productviewer" Text="Product Viewer" NavigateUrl="~/Reports/ProductViewer.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="False" Enabled="False" Value="webreport_pendingorders" Text="Pending Orders" NavigateUrl="~/Reports/PendingOrders.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="False" Enabled="False" Value="webreport_productrepleinshment" Text="Product Repleinshment" NavigateUrl="~/Reports/ProductRepleinshment.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="true"  Enabled="true"  Value="webreport_branchstock" Text="Branch Stock" NavigateUrl="~/Reports/BranchAttStock.aspx"> </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="true"  Enabled="true"  Value="webreport_branchstock" Text="Branchwise Product Stock" NavigateUrl="~/Reports/ProductSearch.aspx"> </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false"  Enabled="false"  Value="webreport_lossSale" Text="Loss Sale Report" NavigateUrl="~/Reports/LossSaleReport.aspx"> </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="false"  Enabled="false"  Value="webreport_Geo_Location" Text="Geo Location" > 
+                                <Items>
+                                    <telerik:RadMenuItem runat="server"  Visible="false" Enabled="false"  Value="webreport_customermappin" Text="Customer map-pin" NavigateUrl="~/Reports/CustMapLocation.aspx"> </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem runat="server"  Visible="false" Enabled="false"  Value="webreport_customermaplocate" Text="Customer map-locate" NavigateUrl="~/Reports/EntityLatLong.aspx"> </telerik:RadMenuItem>
+                                </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server"  Visible="False" Enabled="False" Value="webreport_FranchiseeLossProfitSale" Text="Franchisee Sale" NavigateUrl="~/Reports/FranchiseeSale .aspx"> </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="False"  Enabled="False" Value="webreport_FranchiseeApprovalInOut" Text="Franchisee Approval In Out" NavigateUrl="~/Reports/FranchiseeApprovalInOutReport.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="False"  Enabled="False" Text="Customer Loyalty Information" NavigateUrl="~/Reports/CustomerLoyaltyInformation.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="False"  Enabled="False" Value="WebReport-CentralProductView" Text="Central Product View" NavigateUrl="~/Reports/BranchWiseProductAndSaleDetails.aspx"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Visible="False"  Enabled="False" Value="WebReport-BranchwiseProductReorderLevel" Text="Branchwise Product Reorder Level" NavigateUrl="~/Reports/BranchwiseProductReorderLevelList.aspx"></telerik:RadMenuItem>                                
+                            </Items>
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" Value="webreport_DynamicReports" Text="Dynamic Reports" NavigateUrl="~/Dynamic Reports/DynamicReports.aspx"> </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" Visible="false" Enabled="false" Value="webreport_contactus" Text="Contact Us" NavigateUrl="http://www.retailware.in">
+                        </telerik:RadMenuItem>
+                    </Items>
+                </telerik:RadMenu>
+            </td> 
+            <td width="40%"  height="20px" align="center"  
+                style="font-size:12px;" > Welcome,&nbsp;
+                <asp:Label style="font-size:12px;" ID="lblUserName" runat="server" Text="Guest" />&nbsp;|
+                <asp:HyperLink style="font-size:12px;" ID="lnkLogIn" runat="server" >Log In</asp:HyperLink>&nbsp;
+            </td> 
+        </tr>
+    </table>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+     <div align="center">
+       <hr />
+       <p>
+            Copyright &copy; 2014-15 	Retailware Softech Pvt Ltd Pune - All Rights Reserved.&nbsp &nbsp
+       </p>
+    </div>
+
+    </form>
+</body>
+</html>

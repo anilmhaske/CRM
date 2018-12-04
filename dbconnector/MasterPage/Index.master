@@ -1,0 +1,47 @@
+﻿<%@ master language="VB" inherits="Index, App_Web_index.master.ec608581" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Retailware Softech Pvt Ltd</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <form id="form1" runat="server" style="font-family:Verdana; font-size:12px;"  >
+         <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+        <table width="100%" align="center"   cellspacing="0" cellpadding="0">
+        <tr>
+            <td  align="left"  style="height: 20px ;width:20%" >
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/retailware.png" /><br />
+            </td> 
+            <td align="center"  style="height: 20px ;width:80%;margin-top:2px;" >
+                <asp:Label ID="lblFirmName" runat="server" Text="Firm Name" Font-Size="30px" Font-Italic="True" Font-Bold="True" ForeColor="Blue"></asp:Label> <br />
+                <asp:Label ID="lblSlogan" runat="server" Text="Bussiness Slogan" Font-Size="12px"  Font-Bold="True" ForeColor="Blue"></asp:Label>
+            </td> 
+        </tr>
+        </table>
+        <hr />
+        <table width="100%" align="center"  cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%"  height="5px" align="left"  style="font-size:18px;">
+                &nbsp;</td> 
+        </tr>
+    </table>
+        <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+        <div align="center">
+       <hr />
+       <p>
+            Copyright &copy; 2014-15 	Retailware Softech Pvt Ltd Pune - All Rights Reserved.&nbsp &nbsp
+       </p>
+    </div>
+    </form>
+</body>
+
+
+   
+</html>
